@@ -7,17 +7,8 @@ on:
 
 jobs:
   build:
-    name: Build ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        include:
-          - os: ubuntu-latest
-            output_name: chatspy-linux-x86_64
-            binary_path: dist/chatspy
-          - os: windows-latest
-            output_name: chatspy-windows-x64.exe
-            binary_path: dist/chatspy.exe
+    name: Build Linux
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code

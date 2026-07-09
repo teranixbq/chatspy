@@ -7,7 +7,7 @@ Secure peer-to-peer terminal chat for local networks with end-to-end encryption.
 | Platform | File |
 |----------|------|
 | Linux x86_64 | `chatspy-linux-x86_64` |
-| Windows x64 | `chatspy-windows-x64.exe` |
+| Windows x64 | Build from source (see below) |
 
 ## Quick Start
 
