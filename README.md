@@ -13,26 +13,22 @@ Secure P2P terminal chat for local networks with end-to-end encryption.
 
 ## Installation
 
-**Linux:**
-
-Download from [Releases](https://github.com/teranixbq/chatspy/releases):
 ```bash
-chmod +x chatspy-linux-x86_64
-./chatspy-linux-x86_64
-```
-
-**Windows:**
-
-Build from source:
-```powershell
+# Clone repository
 git clone https://github.com/teranixbq/chatspy.git
 cd chatspy
-python -m venv venv
-venv\Scripts\activate
+
+# Create virtual environment
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac
+# or
+venv\Scripts\activate     # Windows
+
+# Install dependencies
 pip install -r requirements.txt
-pip install pyinstaller
-pyinstaller pyinstaller.spec
-dist\chatspy.exe
+
+# Run ChatSpy
+python -m src
 ```
 
 ## Usage
@@ -53,22 +49,26 @@ dist\chatspy.exe
 - Ports 5000-5001 open in firewall
 - Linux x86_64 or Windows x64
 
+## Building Executable (Optional)
+
+```bash
+# Install build dependencies
+pip install pyinstaller
+
+# Build single executable
+pyinstaller pyinstaller.spec
+
+# Output: dist/chatspy (Linux) or dist/chatspy.exe (Windows)
+```
+
 ## Development
 
 ```bash
-# Setup
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-
-# Run
-python -m src
-
-# Test
+# Run tests
 pytest tests/ -v
 
-# Build
-pyinstaller pyinstaller.spec
+# Format code
+black src/ tests/
 ```
 
 ## License
