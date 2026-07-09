@@ -1,0 +1,18 @@
+# Core Framework
+textual>=0.47.0
+
+# Cryptography
+cryptography>=41.0.0
+
+# Networking
+zeroconf>=0.131.0
+msgpack>=1.0.7
+
+# Notifications
+plyer>=2.1.0
+
+# Data Validation
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+tomli>=2.0.1
+tomli-w>=1.0.0

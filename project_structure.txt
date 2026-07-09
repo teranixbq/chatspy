@@ -1,0 +1,44 @@
+.
+├── assets
+├── chatspy.log
+├── LICENSE
+├── project_structure.txt
+├── pyinstaller.spec
+├── pytest.ini
+├── README.md
+├── requirements-dev.txt
+├── requirements.txt
+├── src
+│   ├── core
+│   │   ├── config.py
+│   │   ├── __init__.py
+│   │   ├── message.py
+│   │   └── user.py
+│   ├── crypto
+│   │   ├── encryption.py
+│   │   ├── exchange.py
+│   │   ├── __init__.py
+│   │   └── keys.py
+│   ├── __init__.py
+│   ├── __main__.py
+│   ├── network
+│   │   ├── discovery.py
+│   │   ├── __init__.py
+│   │   ├── peer.py
+│   │   ├── protocol.py
+│   │   └── transport.py
+│   ├── notifications
+│   │   ├── __init__.py
+│   │   └── notifier.py
+│   └── ui
+│       ├── app.py
+│       ├── __init__.py
+│       ├── screens
+│       ├── theme.py
+│       └── widgets
+└── tests
+    ├── conftest.py
+    ├── __init__.py
+    └── test_crypto.py
+
+11 directories, 31 files
