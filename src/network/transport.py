@@ -4,7 +4,7 @@ import asyncio
 import logging
 from typing import Optional, Callable, Awaitable
 
-from protocol import Protocol
+from network.protocol import Protocol
 from core.message import Message
 
 logger = logging.getLogger(__name__)

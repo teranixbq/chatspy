@@ -4,8 +4,8 @@ import base64
 import os
 from typing import Optional
 
-from keys import KeyManager
-from encryption import MessageEncryption
+from crypto.keys import KeyManager
+from crypto.encryption import MessageEncryption
 
 
 class KeyExchange:

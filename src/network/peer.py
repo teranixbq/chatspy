@@ -5,8 +5,8 @@ import logging
 from typing import Optional, Callable, Awaitable
 from datetime import datetime
 
-from transport import Connection, TransportClient
-from protocol import Protocol, MessageBuilder
+from network.transport import Connection, TransportClient
+from network.protocol import Protocol, MessageBuilder
 from core.user import User
 from core.message import Message, MessageType, ChatMessage, KeyExchangeMessage
 from crypto.exchange import KeyExchange

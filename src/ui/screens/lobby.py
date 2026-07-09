@@ -5,10 +5,10 @@ from textual.screen import Screen
 from textual.containers import Horizontal, Vertical
 from textual.binding import Binding
 
-from widgets.peer_list import PeerList
-from widgets.message_list import MessageList
-from widgets.input_box import MessageInput
-from widgets.status_bar import StatusBar
+from ui.widgets.peer_list import PeerList
+from ui.widgets.message_list import MessageList
+from ui.widgets.input_box import MessageInput
+from ui.widgets.status_bar import StatusBar
 from core.user import User
 
 

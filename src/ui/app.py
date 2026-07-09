@@ -4,9 +4,9 @@ import asyncio
 import logging
 from textual.app import App
 
-from theme import get_aura_theme
-from screens.setup import SetupScreen
-from screens.lobby import LobbyScreen
+from ui.theme import get_aura_theme
+from ui.screens.setup import SetupScreen
+from ui.screens.lobby import LobbyScreen
 from core.config import get_config, set_config
 from core.user import LocalUser, User
 from crypto.keys import KeyManager
